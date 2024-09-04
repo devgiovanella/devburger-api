@@ -29,7 +29,7 @@ class Database {
 
     init() {
         // CRIANDO UMA CONNECTION PASSANDO A CONFIGUAÇÃO DO BANCO E AS MODELS DENTRO DE UM MAP
-        this.connection = new Sequelize('postgresql://postgres:kPsYHILotKNZaIXmyGkbxKGbKtzjHEfh@junction.proxy.rlwy.net:36915/railway');
+        this.connection = new Sequelize('postgresql://postgres:JcTivpdOgpwemozNiayjDKHLhpijyMum@autorack.proxy.rlwy.net:32358/railway');
         // DANDO UM MAP NAS MODELS, CHAMANDO O INIT LA DOS MODELS E CONECTANDO
         models.map((model) => model.init(this.connection))
             // AVISANDO O SEQUELIZE QUE EXISTEM ESSES RELACIONAMENTOS
@@ -41,7 +41,7 @@ class Database {
     // AQUI VAI CONECTART COM O MONGO
     mongo() {
         this.mongoConnection = mongoose.connect(
-            'mongodb://mongo:clGphyRNGPMGDIPcSRxmwwdiNqJsmULp@autorack.proxy.rlwy.net:16852',
+            'mongodb://mongo:qyCYkyngSXgObUoEeIDzyxsMICleasve@junction.proxy.rlwy.net:12195',
         );
     }
 }
